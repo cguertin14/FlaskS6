@@ -3,8 +3,8 @@ from flask_restful import Api
 from flask_jwt import JWT, jwt_required, current_identity
 
 from security import authenticate, identity as identity_function
-from user import UserRegister
-from item import Item, ItemList
+from resources.user import UserRegister
+from resources.item import Item, ItemList
 from datetime import timedelta
 
 app = Flask(__name__)
